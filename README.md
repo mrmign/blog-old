@@ -2,8 +2,7 @@
 
 博客借助Jekyll-Bootstrap和Twitter-Bootstrap搭建而成。
 
-<http://www.mceiba.com>
 
- - Twitter: [@zhangsp](http://twitter.com/#!/zhangsp)
- - Facebook: [mceiba](https://www.facebook.com/#!/mceiba)
+ - Twitter: [@MrMign](http://twitter.com/#!/lam_lee)
+ - Facebook: [ArmingLee](https://www.facebook.com/#!/lam.lee.520)
 
