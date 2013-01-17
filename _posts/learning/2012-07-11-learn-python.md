@@ -3,7 +3,7 @@ layout: post
 title: "Learning Python"
 category: learning
 tags: [python]
-published:false
+published: false
 description: |
   Python是一门优雅的语言，也是我最喜欢的语言，它的简洁高效的语法让你能专注于所解决的问题本身，Learning Python是学习Python最好的入门书籍之一。
 ---

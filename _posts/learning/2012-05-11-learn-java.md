@@ -3,7 +3,7 @@ layout: post
 title: "Thinking in Java"
 category: learning
 tags: [java]
-published:false
+published: false
 description: |
   java的经典名著，无需过多解释，没仔细研读过，别说你学过java，随手翻翻也感觉受益匪浅，java是我喜欢的语言之一，Thinking in Java也是我看过的最好的技术书籍之一。
 ---
