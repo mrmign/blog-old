@@ -398,7 +398,7 @@ p pre code, li pre code {
 
 .highlight, .gist-highlight {
   margin-bottom: 1.8em;
-  background: #002b36;
+  background: #002b36; /* #EEEEFF */
   overflow-y: hidden;
   overflow-x: auto;
 }
