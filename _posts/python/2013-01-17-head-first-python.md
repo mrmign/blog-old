@@ -113,6 +113,8 @@ Ignore errors by `pass`.
 ### P110
 Write things to file.
 {% highlight python %}
+# if you want to use print to file, you must import the following.
+from __future__ import print_function
 out = open("data", "w")
 print("This is the thing to be written.", file=out)
 out.close() #flushing
