@@ -264,3 +264,59 @@ class Myclass(list):
         list.__init__([])
         self.name = a_name
 {% endhighlight %}
+
+## 7 web development -- Putting it all together
+
+### P224
+The standard library `string` module includes a class called `Template` , which supports simple string substitutions.
+
+### P234
+<pre>
+webapp
+|-- cgi-bin
+|-- data
+|-- images
+|-- templates
+</pre>
+
+### P235
+The standard library `http.server` can be used to build a simple web server in python.
+{% highlight python %}
+from http.server import HTTPServer, CGIHTTPRequestHandler
+
+port = 8080
+httpd = HTTPServer(('', port), CGIHTTPRequestHandler)
+print("starting simple_httpd in port: " + str(httpd.server_port))
+httpd.server_forever()
+{% endhighlight %}
+
+### 238
+The standard library `glob` can be used list of filenames.
+{% highlight python %}
+import glob
+files = glob.glob("data/*.txt")
+{% endhighlight %}
+
+### P244
+Get the form data
+{% highlight python %}
+import cgi
+form_data = cgi.FieldStorage()
+value = form_data['value_name'].value
+{% endhighlight %}
+
+### P248
+The standard library `cgitb` module, when enabled, can show you CGI coding errors in your browser.
+{% highlight python %}
+import cgitb
+cgitb.enable()
+{% endhighlight %}
+
+### 250
+`@property`, a decorator that lets arrange for a class method to appear as if it is a class attribute.
+{% highlight python %}
+@property
+def top1(self):
+    return sorted(self.score_list)[0]
+#This method can be used like print("top 1 " + str(top1))
+{% endhighlight %}
