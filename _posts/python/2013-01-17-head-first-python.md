@@ -299,7 +299,7 @@ files = glob.glob("data/*.txt")
 
 ### P244
 Get the form data
-{% highlight python %}
+{% highlight python linenos %}
 import cgi
 form_data = cgi.FieldStorage()
 value = form_data['value_name'].value
