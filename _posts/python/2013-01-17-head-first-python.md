@@ -3,7 +3,7 @@ layout: post
 title: "Head First Python"
 category: learning 
 tags: [python]
-description: Reading Head First Python book notes.
+description: Reading Head First Python book notes. It's based on Python 3.
 ---
 {% include JB/setup %}
 
@@ -190,7 +190,7 @@ except IOError as err:
 {% endhighlight %}
 
 ### P133
-Standard library `pickle` can save and load almost any python data object. The file must be opened in `b` mode.
+Standard library `pickle` (support only for Python 3) can save and load almost any python data object. The file must be opened in `b` mode.
 {% highlight python %}
 import pickle
     ...
@@ -299,7 +299,7 @@ files = glob.glob("data/*.txt")
 
 ### P244
 Get the form data
-{% highlight python %}
+{% highlight python linenos %}
 import cgi
 form_data = cgi.FieldStorage()
 value = form_data['value_name'].value
@@ -312,7 +312,7 @@ import cgitb
 cgitb.enable()
 {% endhighlight %}
 
-### 250
+### P250
 `@property`, a decorator that lets arrange for a class method to appear as if it is a class attribute.
 {% highlight python %}
 @property
@@ -320,3 +320,36 @@ def top1(self):
     return sorted(self.score_list)[0]
 #This method can be used like print("top 1 " + str(top1))
 {% endhighlight %}
+
+## 8 mobile app development -- Small devices
+[Scripting Layer for Android(SL4A)](http://code.google.com/p/android-scripting)
+
+### P263
+Install and configure Android scripting.
+1. Open emulator's or mobile's browser, surt to (http://code.google/com/p/android-scripting).
+2. Download and intsall `sl4a_r*.apk`.
+3. Download and install `python_for_android_r*.apk`.
+
+### P269
+The usage of JSON.
+{% highlight python %}
+>>> import json
+>>> alpha = ['aaa', ['bbb', 'ccc'], 'ddd', ['eee', 'fff', 'ggg']]
+>>> alpha
+['aaa', ['bbb', 'ccc'], 'ddd', ['eee', 'fff', 'ggg']]
+>>> 
+>>> to_transfer = json.dumps(alpha)
+>>> to_transfer
+'["aaa", ["bbb", "ccc"], "ddd", ["eee", "fff", "ggg"]]'
+>>> 
+>>> from_transfer = json.loads(to_transfer)
+>>> from_transfer
+[u'aaa', [u'bbb', u'ccc'], u'ddd', [u'eee', u'fff', u'ggg']]
+>>> alpha
+['aaa', ['bbb', 'ccc'], 'ddd', ['eee', 'fff', 'ggg']]
+{% endhighlight %} 
+
+### P291
+The `sys` module provides the `sys.stdin`, `sys.stdout`, `sys.stderr` inpurt streams.
+
+## 9 manage your data -- Handling input
