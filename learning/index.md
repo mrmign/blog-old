@@ -4,6 +4,11 @@ title: "学习笔记"
 ---
 {% include JB/setup %}
 
+##0 - C,C++
+<ul class="thumbnails">
+  {% assign pages_icons = site.tags.c %}
+  {% include custom/pages_reversed %}
+</ul>
 
 ##1 - Python
 

@@ -190,7 +190,7 @@ except IOError as err:
 {% endhighlight %}
 
 ### P133
-Standard library `pickle` (support only for Python 3) can save and load almost any python data object. The file must be opened in `b` mode.
+Standard library `pickle` (support only for Python 3, not rigth!!) can save and load almost any python data object. The file must be opened in `b` mode.
 {% highlight python %}
 import pickle
     ...
@@ -353,3 +353,18 @@ The usage of JSON.
 The `sys` module provides the `sys.stdin`, `sys.stdout`, `sys.stderr` inpurt streams.
 
 ## 9 manage your data -- Handling input
+### P302
+The standard `os` library includes the `environ` dictionary providing convenient access to your program's environment settings.
+{% highlight python %}
+import os
+addr = os.environ['REMOTE_ADDR']
+host = os.environ['REMOTE_HOST']
+{% endhighlight %}
+
+#### The usage of `sqlite3`.
+
+## 10 scaling your webapp -- Getting real
+This chapter talks about how to build your webapp based on GAE.
+
+## 11 dealing with complexity -- Data wrangling
+It's about reading data from csv file.
