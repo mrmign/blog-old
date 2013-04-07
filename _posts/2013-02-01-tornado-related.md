@@ -7,7 +7,7 @@ tags: [python, tornado]
 {% include JB/setup %}
 
 ## Install
-{% highlight %}
+{% highlight bash %}
 $ curl -L -O http://github.com/downloads/facebook/tornado/tornado-2.1.1.tar.gz
 $ tar xvzf tornado-2.1.1.tar.gz
 $ cd tornado-2.1.1

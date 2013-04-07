@@ -25,7 +25,7 @@
   -o-border-radius: 0;
   -ms-border-radius: 0;
   -khtml-border-radius: 0;
-  border-radius: 0;
+  border-radius: 7px;;
 }
 .highlight .line-numbers span, html .gist .gist-file .gist-syntax .gist-highlight .line-numbers span {
   color: #586e75 !important;
@@ -127,7 +127,7 @@ p code, li code {
   background: #fff;
   font-size: 1em;
   line-height: 1.5em;
-  color: #555;
+  color: #E6264D;
   border: 1px solid #ddd;
   -moz-border-radius: 0.4em;
   -webkit-border-radius: 0.4em;
@@ -401,6 +401,7 @@ p pre code, li pre code {
   background: #002b36; /* #EEEEFF */
   overflow-y: hidden;
   overflow-x: auto;
+  border-radius: 7px;
 }
 .highlight pre, .gist-highlight pre {
   background: none;
